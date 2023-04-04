@@ -25,7 +25,10 @@ header {
 }
 
 .header-section {
+  display: flex;
   background-color: orange;
+  flex-direction: column;
+  justify-content: center;
 }
 
 nav {
@@ -34,11 +37,16 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding-inline: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 nav > ul > li {
   display: inline-block;
   padding: 10;
+  border: 2px solid #ff6550;
+  padding: 10px;
 }
 
 main {

@@ -3,16 +3,15 @@
   --secondary-color: #455d7a;
   --nav-color: #233142;
   --light-font-color: #e3e3e3;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 section {
   padding: 20px;
 }
-section:nth-child(even) {
+section:nth-child(odd) {
   background: #ccc;
 }
-section:nth-child(odd) {
+section:nth-child(even) {
   background: #fff;
 }
 
@@ -36,27 +35,31 @@ header {
   min-height: 500px;
   padding: 20px;
   border: 1px black;
-  max-width: 90%;
-  padding-left: 20px;
-  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
   border: 1px solid black;
   justify-content: space-evenly;
-  margin-top: 80px;
+  background-color: black;
+  color: white;
+  padding-top: 100px;
+  padding-inline: 20px;
 }
 
 .banner-title {
   font-size: 64px;
+  font-weight: 900;
 }
 
 .header-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 1024px;
+  padding-inline: 20px;
+  margin-inline: auto;
 }
 
-nav {
+.navbar-fixed-top {
   font-family: "Source Code Pro", serif;
   display: flex;
   justify-content: space-between;
@@ -64,8 +67,13 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: var(--nav-color);
   color: var(--light-font-color);
+}
+
+.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+  color: black;
 }
 
 nav > ul > li {
@@ -87,6 +95,7 @@ nav > ul > li {
 
 main {
   background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {

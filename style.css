@@ -1,5 +1,31 @@
+* {
+  --primary-color: #f95959;
+  --secondary-color: #455d7a;
+  --nav-color: #233142;
+  --light-font-color: #e3e3e3;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+  padding: 20px;
+}
+section:nth-child(even) {
+  background: #ccc;
+}
+section:nth-child(odd) {
+  background: #fff;
+}
+
+h1,
+h2 {
+  color: var(--primary-color);
+}
+
+h3 {
+  color: var(--secondary-color);
+}
+
 body {
-  background-color: red;
   padding: 0;
   margin: 0;
 }
@@ -7,7 +33,6 @@ body {
 header {
   display: flex;
   flex-direction: row;
-  background-color: green;
   min-height: 500px;
   padding: 20px;
   border: 1px black;
@@ -18,6 +43,7 @@ header {
   margin-right: auto;
   border: 1px solid black;
   justify-content: space-evenly;
+  margin-top: 80px;
 }
 
 .banner-title {
@@ -26,27 +52,37 @@ header {
 
 .header-section {
   display: flex;
-  background-color: orange;
   flex-direction: column;
   justify-content: center;
 }
 
 nav {
+  font-family: "Source Code Pro", serif;
   display: flex;
-  background-color: blue;
   justify-content: space-between;
   align-items: center;
-  padding-inline: 20px;
   position: fixed;
   top: 0;
   width: 100%;
+  background-color: var(--nav-color);
+  color: var(--light-font-color);
 }
 
 nav > ul > li {
   display: inline-block;
   padding: 10;
-  border: 2px solid #ff6550;
   padding: 10px;
+}
+
+/* .nav-container {
+  display: inline-block;
+  padding: 20px;
+  background-color: purple;
+} */
+
+#contact {
+  border: 2px solid var(--primary-color);
+  background-color: var(--primary-color);
 }
 
 main {
@@ -60,6 +96,5 @@ main {
 }
 
 footer {
-  background-color: purple;
-  color: white;
+  color: black;
 }

@@ -18,6 +18,7 @@ section:nth-child(even) {
 h1,
 h2 {
   color: var(--primary-color);
+  font-family: "DM Sans", sans-serif;
 }
 
 h3 {
@@ -68,6 +69,7 @@ header {
   top: 0;
   width: 100%;
   color: var(--light-font-color);
+  padding-inline: 20px;
 }
 
 .scrolled {
@@ -75,18 +77,13 @@ header {
   transition: background-color 200ms linear;
   color: black;
 }
-
+nav > ul {
+  padding-right: 40px;
+}
 nav > ul > li {
   display: inline-block;
-  padding: 10;
   padding: 10px;
 }
-
-/* .nav-container {
-  display: inline-block;
-  padding: 20px;
-  background-color: purple;
-} */
 
 #contact {
   border: 2px solid var(--primary-color);
@@ -106,4 +103,17 @@ main {
 
 footer {
   color: black;
+}
+
+.card {
+  background-color: red;
+  display: flex;
+  border: 3px solid black;
+  flex: 1;
+}
+
+.row-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

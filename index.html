@@ -6,11 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Adam Jakiela</title>
+    <!-- TODO: clean this up -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@700&display=swap" rel="stylesheet"
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Source+Code+Pro"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap" rel="stylesheet">
 
@@ -28,11 +36,9 @@
     </nav>
     <header>
       <div class="header-section">
-        <h1 class="banner-title">Front-End Software Developer</h1>
+        <h1 class="banner-title animate__animated animate__fadeInUp">FRONT END SOFTWARE DEVELOPER</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos aliquid,
-          ab velit, blanditiis voluptas veritatis possimus numquam quae eaque at
-          vel ea quis aut deleniti vero, autem ad inventore. Natus?
+          Full stack developer with 5+ years of experience developing and managing hybrid, web, and back-end applications
         </p>
         <a href="#">About me</a>
       </div>
@@ -54,6 +60,7 @@
           <h2>Skills</h2>
           <div class="row-container">
             <div class="card">
+              <span class="card-title">Front-End</span>
               <ul>
                 <li>HTML</li>
                 <li>CSS</li>
@@ -62,6 +69,8 @@
               </ul>
             </div>
             <div class="card">
+              <span class="card-title">Front-End</span>
+
               <ul>
                 <li>
                   Front-End
@@ -69,6 +78,8 @@
               </ul>
             </div>
             <div class="card">
+              <span class="card-title">Front-End</span>
+
               <ul>
                 <li>
                   Front-End
@@ -87,9 +98,7 @@
       <section>
         <div class="container">
           <h2>Experience</h2>
-          <h3
-            id="full-stack-software-engineer-freightverify-inc-_sep-2021-nov-2022_"
-          >
+          <h3>
             Full Stack Software Engineer, FreightVerify Inc. -
             <em>Sep. 2021 – Nov. 2022</em>
           </h3>
@@ -110,9 +119,7 @@
               multiple teams.
             </li>
           </ul>
-          <h3
-            id="co-founder-full-stack-software-engineer-movatic-inc-_dec-2016-sep-2021_"
-          >
+          <h3>
             Co-Founder/Full Stack Software Engineer, Movatic Inc. -
             <em>Dec. 2016 – Sep.2021</em>
           </h3>
@@ -154,9 +161,7 @@
               reduce system downtime and improve code reusability.
             </li>
           </ul>
-          <h3
-            id="junior-full-stack-software-engineer-a2b-bikeshare-may-_2015-dec-2016_"
-          >
+          <h3          >
             Junior Full Stack Software Engineer, A2B Bikeshare May -
             <em>2015 – Dec. 2016</em>
           </h3>
@@ -180,7 +185,6 @@
             </li>
           </ul>
           <h3
-            id="it-support-specialist-grand-valley-state-university-_sep-2014-dec-2014_"
           >
             IT Support Specialist, Grand Valley State University -
             <em>Sep. 2014 – Dec. 2014</em>
@@ -196,6 +200,17 @@
       </section>
       <section>
         <div class="container">
+          <h2>Education</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+            architecto veniam earum perspiciatis? Consectetur ut quae quis,
+            doloribus soluta consequuntur quo, error ipsum veniam, porro
+            necessitatibus ab eius. Pariatur, inventore.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="container">
           <h2>Resume</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
@@ -207,14 +222,16 @@
       </section>
       <section>
         <div class="container">
-
         <h2>Contact</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-          quaerat non porro quidem. Ipsa dolorem alias consequatur. Hic impedit
-          nihil non, velit maxime tempore nemo, repudiandae, libero totam
-          repellendus at?
-        </p>
+        <form class="contact-form" action="">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          <input type="submit" value="Submit">
+        </form>
         </div>
       </section>
       </main>
